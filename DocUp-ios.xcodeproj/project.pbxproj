@@ -12,6 +12,8 @@
 		842856BB26432CB90074528C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 842856B926432CB90074528C /* Main.storyboard */; };
 		842856BD26432CBC0074528C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 842856BC26432CBC0074528C /* Assets.xcassets */; };
 		842856C026432CBC0074528C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 842856BE26432CBC0074528C /* LaunchScreen.storyboard */; };
+		846B0EE12646B374006A053C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846B0EE02646B374006A053C /* LoginViewController.swift */; };
+		846B0EE3264872B2006A053C /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846B0EE2264872B1006A053C /* ProfileViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		842856BC26432CBC0074528C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		842856BF26432CBC0074528C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		842856C126432CBC0074528C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		846B0EE02646B374006A053C /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		846B0EE2264872B1006A053C /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +58,40 @@
 		842856B426432CB90074528C /* DocUp-ios */ = {
 			isa = PBXGroup;
 			children = (
-				842856B526432CB90074528C /* AppDelegate.swift */,
-				842856B726432CB90074528C /* ViewController.swift */,
-				842856B926432CB90074528C /* Main.storyboard */,
+				842856CA26432D260074528C /* Main */,
+				842856C926432D060074528C /* Application */,
 				842856BC26432CBC0074528C /* Assets.xcassets */,
 				842856BE26432CBC0074528C /* LaunchScreen.storyboard */,
 				842856C126432CBC0074528C /* Info.plist */,
 			);
 			path = "DocUp-ios";
+			sourceTree = "<group>";
+		};
+		842856C926432D060074528C /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				842856B526432CB90074528C /* AppDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		842856CA26432D260074528C /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				846B0EE42648757C006A053C /* Models */,
+				842856B926432CB90074528C /* Main.storyboard */,
+				842856B726432CB90074528C /* ViewController.swift */,
+				846B0EE02646B374006A053C /* LoginViewController.swift */,
+				846B0EE2264872B1006A053C /* ProfileViewController.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		846B0EE42648757C006A053C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -91,7 +121,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1020;
-				LastUpgradeCheck = 1020;
+				LastUpgradeCheck = 1250;
 				ORGANIZATIONNAME = "админ";
 				TargetAttributes = {
 					842856B126432CB90074528C = {
@@ -135,7 +165,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				846B0EE12646B374006A053C /* LoginViewController.swift in Sources */,
 				842856B826432CB90074528C /* ViewController.swift in Sources */,
+				846B0EE3264872B2006A053C /* ProfileViewController.swift in Sources */,
 				842856B626432CB90074528C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -188,6 +220,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -213,7 +246,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -249,6 +282,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -268,7 +302,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -283,7 +317,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WV9V9597K7;
 				INFOPLIST_FILE = "DocUp-ios/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -291,7 +327,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "-.DocUp-ios";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -300,7 +336,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WV9V9597K7;
 				INFOPLIST_FILE = "DocUp-ios/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -308,7 +346,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "-.DocUp-ios";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
