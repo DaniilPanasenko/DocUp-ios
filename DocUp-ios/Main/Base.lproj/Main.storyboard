@@ -214,30 +214,278 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O1T-Mc-dhU">
-                                <rect key="frame" x="124" y="231" width="167" height="133"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8kN-U5-75a">
+                                <rect key="frame" x="20" y="793" width="374" height="69"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="tintColor" red="1" green="0.0" blue="0.64623618230000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <attributedString key="attributedText">
-                                    <fragment content="Login">
-                                        <attributes>
-                                            <color key="NSColor" red="0.11095672292807668" green="0.11095672292807668" blue="0.11095672292807668" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                            <font key="NSFont" size="44" name="SFMono-BoldItalic"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
-                                <color key="highlightedColor" systemColor="linkColor"/>
-                            </label>
+                                <color key="backgroundColor" systemColor="systemRedColor"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="50"/>
+                                <state key="normal" title="SOS">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="Sos:" destination="0hV-Lj-V5b" eventType="touchUpInside" id="zEl-Cb-qxc"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3zi-F4-G7e">
+                                <rect key="frame" x="20" y="109" width="374" height="203"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1ke-JO-RZZ">
+                                        <rect key="frame" x="8" y="52" width="358" height="28"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="tintColor" red="1" green="0.0" blue="0.64623618230000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="name">
+                                                <attributes>
+                                                    <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <font key="NSFont" size="24" name="SFMono-BoldItalic"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <color key="highlightedColor" systemColor="linkColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UKA-3Y-8Is">
+                                        <rect key="frame" x="8" y="123" width="358" height="28"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="tintColor" red="1" green="0.0" blue="0.64623618230000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="email">
+                                                <attributes>
+                                                    <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <font key="NSFont" size="24" name="SFMono-BoldItalic"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <color key="highlightedColor" systemColor="linkColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NNE-ui-q6s">
+                                        <rect key="frame" x="8" y="87" width="358" height="28"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="tintColor" red="1" green="0.0" blue="0.64623618230000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="phone">
+                                                <attributes>
+                                                    <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <font key="NSFont" size="24" name="SFMono-BoldItalic"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <color key="highlightedColor" systemColor="linkColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6oO-Ai-A4b">
+                                        <rect key="frame" x="8" y="159" width="358" height="28"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="tintColor" red="1" green="0.0" blue="0.64623618230000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="address">
+                                                <attributes>
+                                                    <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <font key="NSFont" size="24" name="SFMono-BoldItalic"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <color key="highlightedColor" systemColor="linkColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VPW-2Y-Tfn">
+                                        <rect key="frame" x="8" y="7" width="358" height="42"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="Login">
+                                                <attributes>
+                                                    <color key="NSColor" red="0.1109567229" green="0.1109567229" blue="0.1109567229" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <font key="NSFont" size="30" name="SFMono-Bold"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.62835479370000002" blue="0.28241815059999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Fd2-Ar-mJt">
+                                <rect key="frame" x="20" y="328" width="374" height="133"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sd8-yn-zwe">
+                                        <rect key="frame" x="8" y="8" width="358" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="tintColor" red="1" green="0.0" blue="0.64623618230000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="Doctor">
+                                                <attributes>
+                                                    <color key="NSColor" red="1" green="0.62835479370000002" blue="0.28241815059999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <font key="NSFont" size="30" name="SFMono-Bold"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j5P-LZ-Dkh">
+                                        <rect key="frame" x="8" y="54" width="358" height="28"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="tintColor" red="1" green="0.0" blue="0.64623618230000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="doctor name">
+                                                <attributes>
+                                                    <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <font key="NSFont" size="24" name="SFMono-BoldItalic"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <color key="highlightedColor" systemColor="linkColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cn0-qP-UYP">
+                                        <rect key="frame" x="8" y="90" width="358" height="28"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="tintColor" red="1" green="0.0" blue="0.64623618230000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="doctor phone">
+                                                <attributes>
+                                                    <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <font key="NSFont" size="24" name="SFMono-BoldItalic"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <color key="highlightedColor" systemColor="linkColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.19508444857435162" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0Lx-j0-CtW">
+                                <rect key="frame" x="20" y="477" width="374" height="133"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GtR-jG-lqd">
+                                        <rect key="frame" x="8" y="8" width="358" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="tintColor" red="1" green="0.0" blue="0.64623618230000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="Watcher">
+                                                <attributes>
+                                                    <color key="NSColor" red="1" green="0.62835479370000002" blue="0.28241815059999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <font key="NSFont" size="30" name="SFMono-BoldItalic"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <color key="highlightedColor" systemColor="linkColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Wb-lO-RtW">
+                                        <rect key="frame" x="8" y="52" width="358" height="28"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="tintColor" red="1" green="0.0" blue="0.64623618230000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="watcher name">
+                                                <attributes>
+                                                    <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <font key="NSFont" size="24" name="SFMono-BoldItalic"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <color key="highlightedColor" systemColor="linkColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6dK-Ks-WcB">
+                                        <rect key="frame" x="8" y="88" width="358" height="28"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="tintColor" red="1" green="0.0" blue="0.64623618230000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="watcher phone">
+                                                <attributes>
+                                                    <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <font key="NSFont" size="24" name="SFMono-BoldItalic"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <color key="highlightedColor" systemColor="linkColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.19939240955171131" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SIz-7d-QZN">
+                                <rect key="frame" x="20" y="627" width="374" height="147"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oee-wa-QxI">
+                                        <rect key="frame" x="23" y="18" width="332" height="45"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="Illness">
+                                                <attributes>
+                                                    <color key="NSColor" red="1" green="0.62835479370000002" blue="0.28241815059999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <font key="NSFont" metaFont="system" size="37"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                    </label>
+                                    <progressView opaque="NO" tag="1" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="0.20000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="fsi-P4-GCQ">
+                                        <rect key="frame" x="23" y="82" width="332" height="5"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="tintColor" systemColor="systemRedColor"/>
+                                    </progressView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zXo-dl-erq">
+                                        <rect key="frame" x="21" y="94" width="332" height="45"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="Percent">
+                                                <attributes>
+                                                    <color key="NSColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <font key="NSFont" size="25" name="SFMono-Regular"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.19939240959999999" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Z40-eD-awO"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <gestureRecognizers/>
                     </view>
-                    <navigationItem key="navigationItem" title="DocUp" id="KFw-az-gU2"/>
+                    <navigationItem key="navigationItem" title="DocUp" id="KFw-az-gU2">
+                        <barButtonItem key="rightBarButtonItem" title="Log Out" style="done" id="i6C-x0-7qB">
+                            <color key="tintColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="Logout:" destination="0hV-Lj-V5b" id="eat-IE-f45"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="Address" destination="6oO-Ai-A4b" id="bIS-oe-HYO"/>
+                        <outlet property="DoctorInfo" destination="Fd2-Ar-mJt" id="aNv-gQ-AQv"/>
+                        <outlet property="DoctorName" destination="j5P-LZ-Dkh" id="yqS-cU-sNN"/>
+                        <outlet property="DoctorPhoneNumber" destination="cn0-qP-UYP" id="6xf-rz-HrD"/>
+                        <outlet property="Email" destination="UKA-3Y-8Is" id="mfh-SD-vmF"/>
+                        <outlet property="IllnessInfo" destination="SIz-7d-QZN" id="Hpl-OM-qGU"/>
+                        <outlet property="IllnessName" destination="oee-wa-QxI" id="r6f-KO-DUg"/>
+                        <outlet property="Login" destination="VPW-2Y-Tfn" id="fbg-Ij-pbJ"/>
+                        <outlet property="NameLabel" destination="1ke-JO-RZZ" id="R0u-7h-TQy"/>
+                        <outlet property="PatientInfo" destination="3zi-F4-G7e" id="yfi-iw-H3M"/>
+                        <outlet property="Percent" destination="zXo-dl-erq" id="R7v-Gm-r7g"/>
+                        <outlet property="PhoneNumber" destination="NNE-ui-q6s" id="1aN-hi-7vE"/>
+                        <outlet property="ProgressBar" destination="fsi-P4-GCQ" id="81U-uq-vLx"/>
+                        <outlet property="SosButton" destination="8kN-U5-75a" id="yCp-nv-hb0"/>
+                        <outlet property="WatcherInfo" destination="0Lx-j0-CtW" id="L0o-CE-GoB"/>
+                        <outlet property="WatcherName" destination="6Wb-lO-RtW" id="gXT-Ph-Ujn"/>
+                        <outlet property="WatcherPhoneNumber" destination="6dK-Ks-WcB" id="LrW-IK-5kf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dhe-J6-m0p" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2355" y="783"/>
+            <point key="canvasLocation" x="3495.652173913044" y="529.6875"/>
         </scene>
     </scenes>
     <resources>
@@ -249,6 +497,9 @@
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
